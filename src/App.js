@@ -1,23 +1,19 @@
 import logo from './logo.svg';
 import './App.css';
+import RMGHeader from './components/RMGHeader.tsx';
+import RMGButton from './components/RMGButtonProps.tsx';
+import RMGImage from './components/RMGImage.tsx';
+import RMGInput from './components/RMGInput.tsx';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <RMGHeader>RMGHeader</RMGHeader>
+      <RMGButton>RMGButton</RMGButton>
+      <RMGImage>RMGImage</RMGImage>
+      <RMGInput>RMGInput</RMGInput>
+
+    
     </div>
   );
 }
